@@ -1,0 +1,146 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, button{
+    font: inherit;
+}
+
+.login{
+    display: flex;
+}
+
+.banner{
+    width: 100%;
+    max-width: 40%;
+    height: 100vh;
+    background: #ff9f0d;
+    padding: 50px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-wrapper{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.banner-wrapper h1{
+    font-size: 2.5rem;
+}
+
+.banner-wrapper img{
+    max-width: 350px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.container{
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.title h2{
+    font-size: 2.5rem;
+}
+
+.field{
+    display: grid;
+    gap: 1rem;
+}
+
+.field-input{
+    display: grid;
+    gap: .3rem;
+}
+
+.field-input input{
+    background: #fff;
+    border: 2px solid #808080;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.field-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.field-input.button button{
+    background: #4244e7;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.field-input.button p{
+    color: #808080;
+    font-size: .9rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:920px) {
+    .login{
+        flex-direction: column;
+    }
+
+    .banner{
+        max-width: 100%;
+        height: 225px;
+        margin-bottom: 20px;
+    }
+
+    .banner-wrapper{
+        gap: .5rem;
+    }
+
+    .banner-wrapper img{
+        max-width: 100px;
+    }
+
+    .banner-wrapper h1{
+        font-size: 2rem;
+    }
+
+    .banner-wrapper p{
+        font-size: .9rem;
+    }
+
+
+
+    .field-wrapper{
+        flex-wrap: wrap;
+    }
+
+
+}

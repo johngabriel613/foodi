@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Foodie</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="registration">
+        <div class="banner">
+            <div class="banner-wrapper">
+                    <img class="logo" src="assets/foodi.png" alt="">
+                    <h1>Welcome to Foodi</h1>
+                    <p>Plan your foof blog post by choosing a topic creating an outline checking facts.</p>
+                <img class="hero" src="assets/plate.png" alt="">
+            </div>
+        </div>
+
+        <form action="#">
+           <div class="container">
+             <div class="title">
+                <h2>Create an Account</h2>
+                <p>Already have an account? <a href="login.html">Sign in here</a></p>
+            </div>
+
+            <div class="field">
+                <div class="field-wrapper name">
+                    <div class="field-input">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="field-input">
+                        <label for="mname">Middle Name</label>
+                        <input type="text" id="mname">
+                    </div>
+                    <div class="field-input">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname">
+                    </div>
+                    <div class="field-input">
+                        <label for="suffix">Suffix</label>
+                        <input type="text" id="suffix">
+                    </div>
+                </div>
+
+                <div class="field-wrapper">
+                    <div class="field-input">
+                        <label for="nationality">Nationality</label>
+                        <input type="text" id="nationality">
+                    </div>
+                    <div class="field-input">
+                        <label for="others">(Others)</label>
+                        <input type="text" id="others">
+                    </div>
+                </div>
+
+                <div class="field-wrapper">
+                    <div class="field-input">
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="field-input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                </div>
+
+                <div class="field-wrapper">
+                    <div class="field-input pass">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="js-pass">
+                        <img src="assets/showPass.svg" alt="" class="show-hide-pass" data-index="0">
+                    </div>
+                    <div class="field-input pass">
+                        <label for="confirmpass">Confirm Password</label>
+                        <input type="password" id="confirmpass" class="js-pass">
+                        <img src="assets/showPass.svg" alt="" class="show-hide-pass" data-index="1">
+                    </div>
+                </div>
+
+                <div class="field-wrapper">
+                    <div class="field-check">
+                        <input type="checkbox" id="password">
+                        <label for="terms">I agree to <a href="#">Terms and conditions.</a></label>
+                    </div>
+                </div>          
+            </div>
+            <button>Create Account</button>
+           </div>
+        </form>
+    </section>
+</body>
+</html>

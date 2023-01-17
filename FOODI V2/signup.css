@@ -1,0 +1,175 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, button{
+    font: inherit;
+}
+
+.registration{
+    display: flex;
+}
+
+.banner{
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background: #ff9f0d;
+    padding: 50px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-wrapper{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.banner-wrapper p{
+    font-size: .9rem;
+}
+
+.logo{
+    max-width: 80px;
+}
+
+.hero{
+    max-width: 300px;
+}
+
+form{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title p{
+    color: #808080;
+    font-size: .9rem;
+    margin-top: 5px;
+}
+
+.field{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.field-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.field-input{
+    display: grid;
+    gap: .5rem;
+    width: 100%;
+    position: relative;
+}
+
+.field-input label{
+    font-size: .9rem;
+}
+
+.field-input input{
+    border: 2px solid transparent;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.field-check label{
+    font-size: .9rem;
+}
+
+.field-input.user{
+    display: flex;
+    align-items: center;
+}
+
+.field-input.user img{
+    width: 100px;
+}
+
+.field-input.pass img{
+    width: 24px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+}
+
+.field-input.user input::file-selector-button{
+    font: inherit;
+    color: #fff;
+    background: #ea4c89;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button{
+    width: fit-content;
+    background: #ea4c89;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:920px) {
+    .registration{
+        flex-direction: column;
+    }
+
+    .banner{
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .banner-wrapper{
+        gap: .5rem;
+    }
+
+    .logo{
+        max-width: 50px;
+    }
+
+    .hero{
+        max-width: 100px;
+    }
+
+    .field-wrapper{
+        flex-wrap: wrap;
+    }
+
+
+}
